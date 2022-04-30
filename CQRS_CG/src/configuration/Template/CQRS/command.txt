@@ -1,0 +1,9 @@
+
+namespace BcmLogicONE.VendorHUB.Application.Commands.@<ns>
+{
+    public class @<cl>Command : IRequest<Unit>
+    {
+        public long Id { get; set; }
+
+    }
+}

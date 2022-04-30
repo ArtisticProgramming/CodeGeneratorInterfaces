@@ -1,0 +1,19 @@
+namespace BcmLogicONE.VendorHUB.Application.Queries.@<ns>
+{
+     public class @<cl>QueryHandler : IRequestHandler<@<cl>Query,long>
+    {
+        private readonly IMapper _mapper;
+        private readonly ILogger<@<cl>QueryHandler> _logger;
+
+        public @<cl>QueryHandler(IMapper mapper,ILogger<@<cl>QueryHandler> logger)
+        {
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
+            _logger = logger;
+        }
+
+        public async Task<long> Handle(@<cl>Query request, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

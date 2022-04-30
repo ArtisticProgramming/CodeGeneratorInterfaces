@@ -1,0 +1,25 @@
+namespace BcmLogicONE.VendorHUB.Application.Commands.@<ns>
+{
+    public class @<cl>CommandHandler : IRequestHandler<@<cl>Command ,long>
+    {
+        private readonly IMapper _mapper;
+        private readonly ILogger<@<cl>CommandHandler> _logger;
+
+        public @<cl>CommandHandler(IMapper mapper,
+                                     ILogger<@<cl>CommandHandler> logger)
+        {
+            _mapper = mapper;
+            _logger = logger;
+        }
+
+        public async Task<long> Handle(@<cl>Command request, CancellationToken cancellationToken)
+        {
+            //var result = _mapper.Map<Domain.Entities.Vendor>(request);
+            //var model = await _vendorRepository.AddAsync(result);
+            //return 0;
+
+            throw new NotImplementedException();
+
+        }
+    }
+}
