@@ -8,6 +8,8 @@ def currentDateTime():
 def GeneratetCurrentDateTime(format ="%a_%d_%m_%Y_%H_%M_%S"):
     return strftime(format, gmtime())
 
+    
+
 if (__name__ == "__main__"):
     print(currentDateTime())
     print(GeneratetCurrentDateTime())

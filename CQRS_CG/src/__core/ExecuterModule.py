@@ -30,3 +30,7 @@ def createParamtersString(dictionaryParam):
         paramArray.append(MakeParam(x,dictionaryParam[x]))  
     Param =  sep.join(paramArray)
     return Param
+
+def CreateFileName(className):
+    OutPutPath ='\\'+className+".cs"
+    return OutPutPath
