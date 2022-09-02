@@ -1,0 +1,7 @@
+namespace BcmLogicONE.VendorHUB.Application.Contracts.Repository
+{
+    public interface I@<cl>Repository : IAsyncRepository<@<cl>>
+    {
+    
+    }
+}

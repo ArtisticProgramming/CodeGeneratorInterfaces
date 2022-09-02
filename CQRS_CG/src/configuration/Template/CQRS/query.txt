@@ -1,7 +1,7 @@
 
 namespace BcmLogicONE.VendorHUB.Application.Queries.@<ns>
 {
-    public class @<cl>Query : IRequest<long>
+    public class @<cl>Query : IRequest<string>
     {
         
     }

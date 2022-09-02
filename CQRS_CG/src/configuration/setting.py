@@ -32,3 +32,19 @@ class repository:
      folder_path = _base_setting.infrastructure_project_base_path+r"\Repositories"
     
 
+
+class IRepository:
+     _base_template_path = _base_setting.tempate_base_path + r"\Repository"
+     #templates
+     template_path =  _base_template_path + r"\IRepository.txt"
+     #Project Paths
+     folder_path = _base_setting.application_project_base_path+ r"\Contracts\Repository"
+    
+
+
+class EntitySchemaConfiguration:
+     #templates
+     template_path =  _base_setting.tempate_base_path + r"\Schema\EntitySchemaConfiguration.txt"
+     #Project Paths
+     folder_path = _base_setting.infrastructure_project_base_path+r"\SchemaDefinitions"
+  

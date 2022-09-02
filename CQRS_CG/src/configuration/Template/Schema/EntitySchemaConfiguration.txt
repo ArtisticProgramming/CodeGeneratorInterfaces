@@ -1,0 +1,22 @@
+namespace BcmLogicONE.VendorHUB.Infrastructure.SchemaDefinitions
+{
+    internal class @<cl>EntitySchemaConfiguration : IEntityTypeConfiguration<@<cl>>
+    {
+        public void Configure(EntityTypeBuilder<@<cl>> builder)
+        {
+            builder.ToTable("@<cl>");
+            builder.HasKey(x => x.Id);
+
+            //One To Many
+            //builder.HasOne(e => e.)
+            //      .WithMany(c => c.)
+            //      .HasForeignKey(x => x.) //like sectorId
+            //      .Metadata.DeleteBehavior = DeleteBehavior.NoAction;
+
+            //One To One
+            //builder.HasOne(a => a.VendorProfile)
+            //       .WithOne(x => x.Vendor)
+            //       .HasForeignKey<VendorProfile>(x => x.VendorId);
+        }
+    }
+}
