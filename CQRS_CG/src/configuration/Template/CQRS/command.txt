@@ -1,7 +1,7 @@
 
-namespace BcmLogicONE.VendorHUB.Application.Commands.@<ns>
+namespace BcmLogicONE.IncidentService.Application.Commands.@<ns>
 {
-    public class @<cl>Command : IRequest<Unit>
+    public class @<cl>Command : IRequest<long>
     {
         public long Id { get; set; }
 

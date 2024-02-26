@@ -6,7 +6,7 @@ print(__name__)
 
 
 def _CreateHandlerTemp(baseName,subNamespace):
-    className = baseName + "Handler"
+    className = baseName + "QueryHandler"
     OutPutPath ='\\'+className+".cs"
     paramDic = {
         "cl": baseName,

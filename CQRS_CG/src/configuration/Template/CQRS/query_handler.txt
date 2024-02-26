@@ -1,22 +1,16 @@
-namespace BcmLogicONE.VendorHUB.Application.Queries.@<ns>
+namespace BcmLogicONE.IncidentService.Application.Queries.@<ns>
 {
      public class @<cl>QueryHandler : IRequestHandler<@<cl>Query,string>
     {
         private readonly IMapper _mapper;
         private readonly ILogger<@<cl>QueryHandler> _logger;
-        private readonly DapperContext _context;
-        private readonly IRejestrService _rejestrService;
-        private readonly IVendorHUBContext _dbContext;
-        private IUnitOfWork UnitOfWork => _dbContext;
+        private readonly BCMContext _dbContext;
 
-        public @<cl>QueryHandler(IMapper mapper,ILogger<@<cl>QueryHandler> logger, DapperContext context, IRejestrService rejestrService, IVendorHUBContext dbContext)
+        public @<cl>QueryHandler(IMapper mapper, ILogger<@<cl>QueryHandler> logger, BCMContext dbContext, IMediator mediator) 
         {
             _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
             _logger = logger;
-            _context = context;
-            _rejestrService = rejestrService;
             _dbContext = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
-
         }
 
         public async Task<string> Handle(@<cl>Query request, CancellationToken cancellationToken)

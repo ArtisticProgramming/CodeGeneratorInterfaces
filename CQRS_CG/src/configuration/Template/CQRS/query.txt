@@ -1,5 +1,5 @@
 
-namespace BcmLogicONE.VendorHUB.Application.Queries.@<ns>
+namespace BcmLogicONE.IncidentService.Application.Queries.@<ns>
 {
     public class @<cl>Query : IRequest<string>
     {

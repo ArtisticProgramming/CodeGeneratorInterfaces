@@ -1,4 +1,4 @@
-namespace BcmLogicONE.VendorHUB.Application.Contracts.Repository
+namespace BcmLogicONE.IncidentService.Infrastructure.Contracts.Repository
 {
     public interface I@<cl>Repository : IAsyncRepository<@<cl>>
     {

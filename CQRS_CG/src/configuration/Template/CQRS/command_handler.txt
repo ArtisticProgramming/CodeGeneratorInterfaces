@@ -1,16 +1,18 @@
-namespace BcmLogicONE.VendorHUB.Application.Commands.@<ns>
+namespace BcmLogicONE.IncidentService.Application.Commands.@<ns>
 {
-    public class @<cl>CommandHandler : IRequestHandler<@<cl>Command ,long>
+    public class @<cl>CommandHandler : BaseHandler, IRequestHandler<@<cl>Command ,long>
     {
-        private readonly IMapper _mapper;
-        private readonly ILogger<@<cl>CommandHandler> _logger;
+      private readonly IMapper _mapper;
+      private readonly ILogger< @<cl>CommandHandler> _logger;
 
-        public @<cl>CommandHandler(IMapper mapper,
-                                     ILogger<@<cl>CommandHandler> logger)
-        {
-            _mapper = mapper;
-            _logger = logger;
-        }
+      private readonly BCMContext _dbContext;
+
+      public  @<cl>CommandHandler(IMapper mapper, ILogger< @<cl>CommandHandler> logger, BCMContext dbContext, IMediator mediator) : base(mediator)
+      {
+          _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
+          _logger = logger;
+          _dbContext = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
+      }
 
         public async Task<long> Handle(@<cl>Command request, CancellationToken cancellationToken)
         {

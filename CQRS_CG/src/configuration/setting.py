@@ -3,8 +3,13 @@ currentPath=os.path.abspath(os.getcwd())
 
 class _base_setting:
      #Project Paths
-     application_project_base_path= r"C:\Users\jafar\source\repos\VendorHUB\src\BcmLogicONE.VendorHUB.Application";
-     infrastructure_project_base_path= r"C:\Users\jafar\source\repos\VendorHUB\src\BcmLogicONE.VendorHUB.Infrastructure";
+     # -----------VendorHub------------
+     #application_project_base_path= r"C:\Users\jafar\source\repos\VendorHUB\src\BcmLogicONE.VendorHUB.Application";
+     #infrastructure_project_base_path= r"C:\Users\jafar\source\repos\VendorHUB\src\BcmLogicONE.VendorHUB.Infrastructure";
+     # -----------Incident Service------------
+     application_project_base_path= r"C:\Users\tree\source\repos\BCMLogicONEServices\src\BCMLogicONE.Services\IncidentSvc\BcmLogicONE.IncidentService.Application";
+     infrastructure_project_base_path= r"C:\Users\tree\source\repos\BCMLogicONEServices\src\BCMLogicONE.Services\IncidentSvc\BcmLogicONE.IncidentService.Infrastructure";
+     
      #Template Paths
      tempate_base_path= currentPath+r"\configuration\Template"
 
@@ -38,7 +43,7 @@ class IRepository:
      #templates
      template_path =  _base_template_path + r"\IRepository.txt"
      #Project Paths
-     folder_path = _base_setting.application_project_base_path+ r"\Contracts\Repository"
+     folder_path = _base_setting.infrastructure_project_base_path+ r"\Contracts\Repository"
     
 
 

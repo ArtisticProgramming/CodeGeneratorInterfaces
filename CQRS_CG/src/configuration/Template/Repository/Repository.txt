@@ -1,12 +1,8 @@
-using BcmLogicONE.VendorHUB.Application.Helper.ReflectionHelpers;
-using BcmLogicONE.VendorHUB.Application.Queries.VendorModel;
-using BcmLogicONE.VendorHUB.Application.ViewModels.Vendor;
-
-namespace BcmLogicONE.VendorHUB.Infrastructure.Repositories
+namespace BcmLogicONE.IncidentService.Infrastructure.Repositories
 {
     public class @<cl>Repository : RepositoryBase<@<cl>>, I@<cl>Repository
     {
-        public @<cl>Repository(VendorHUBContext dbContext) : base(dbContext)
+        public @<cl>Repository(BCMContext dbContext) : base(dbContext)
         {
         }
     }
